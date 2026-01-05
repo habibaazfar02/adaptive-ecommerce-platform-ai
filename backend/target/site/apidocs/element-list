@@ -1,0 +1,12 @@
+com.ecommerce
+com.ecommerce.config
+com.ecommerce.controller
+com.ecommerce.decorator
+com.ecommerce.dto
+com.ecommerce.factory
+com.ecommerce.model
+com.ecommerce.observer
+com.ecommerce.reflection
+com.ecommerce.repository
+com.ecommerce.service
+com.ecommerce.strategy

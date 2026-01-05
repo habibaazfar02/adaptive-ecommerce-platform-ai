@@ -1,0 +1,76 @@
+{
+	"info": {
+		"name": "Adaptive E-Commerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. User - Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"secure123\"\r\n}",
+					"options": { "raw": { "language": "json" } }
+				},
+				"url": "http://localhost:8080/api/users/register"
+			}
+		},
+		{
+			"name": "2. Adaptive - Trigger Reflection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"volatility\": \"HIGH\"\r\n}",
+					"options": { "raw": { "language": "json" } }
+				},
+				"url": "http://localhost:8080/api/adaptive/adapt"
+			}
+		},
+		{
+			"name": "3. Observer - Update Stock (Trigger Price Slash)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "60",
+					"options": { "raw": { "language": "json" } }
+				},
+				"url": "http://localhost:8080/api/products/1/stock"
+			}
+		},
+		{
+			"name": "4. Strategy - Get Recommendations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/recommendations/1"
+			}
+		},
+		{
+			"name": "5. Order - Checkout (Trigger Factory Notification)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"paymentMethod\": \"Credit Card\",\r\n    \"total\": 1200.50,\r\n    \"items\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Smart Watch\",\r\n            \"price\": 200.50,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": { "raw": { "language": "json" } }
+				},
+				"url": "http://localhost:8080/api/orders"
+			}
+		},
+		{
+			"name": "6. Inbox - Clear Notifications (Transactional)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/inbox/user/1"
+			}
+		}
+	]
+}
