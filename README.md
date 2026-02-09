@@ -292,14 +292,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 👩‍💻 Author
-
-**Sukaina Shoaib**
-Software Engineering Student
-Case Study – Software Design & Architecture
-
----
-
 ## ⭐ Final Notes
 
 This project demonstrates:
