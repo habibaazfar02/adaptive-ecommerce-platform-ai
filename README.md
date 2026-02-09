@@ -309,5 +309,3 @@ This project demonstrates:
 * Full-stack integration
 * Industry-aligned best practices
 
-
-Just tell me 👍
